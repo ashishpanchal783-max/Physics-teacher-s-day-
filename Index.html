@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Teachers' Day Sir ⚡</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    overflow-x:hidden;
+    font-family:Arial,sans-serif;
+    color:white;
+    background:
+    radial-gradient(circle at 20% 20%,#182b50,transparent 35%),
+    radial-gradient(circle at 80% 80%,#302052,transparent 35%),
+    #050914;
+}
+
+/* STARS */
+
+.stars{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+}
+
+.star{
+    position:absolute;
+    width:3px;
+    height:3px;
+    background:white;
+    border-radius:50%;
+    opacity:.7;
+    animation:blink 2s infinite alternate;
+}
+
+@keyframes blink{
+    from{opacity:.2}
+    to{opacity:1}
+}
+
+/* FLOATING FORMULAS */
+
+.formula{
+    position:fixed;
+    font-size:20px;
+    opacity:.12;
+    animation:float 8s infinite ease-in-out;
+    pointer-events:none;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0) rotate(0deg);
+    }
+    50%{
+        transform:translateY(-30px) rotate(5deg);
+    }
+}
+
+/* MAIN */
+
+.container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:25px;
+}
+
+.card{
+    width:min(680px,95%);
+    padding:35px 25px;
+    text-align:center;
+
+    background:rgba(10,18,35,.72);
+    border:1px solid rgba(255,255,255,.18);
+    border-radius:30px;
+
+    backdrop-filter:blur(16px);
+
+    box-shadow:
+    0 20px 70px rgba(0,0,0,.6);
+}
+
+/* ICON */
+
+.atom{
+    width:150px;
+    height:150px;
+    margin:0 auto 25px;
+    position:relative;
+}
+
+.atom::before,
+.atom::after{
+    content:"";
+    position:absolute;
+    inset:15px;
+    border:2px solid #8fc7ff;
+    border-radius:50%;
+    transform:rotate(60deg);
+}
+
+.atom::after{
+    transform:rotate(-60deg);
+}
+
+.nucleus{
+    position:absolute;
+    width:35px;
+    height:35px;
+    background:#ffffff;
+    border-radius:50%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    box-shadow:0 0 25px #8fc7ff;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 16px;
+    border-radius:30px;
+    background:rgba(255,255,255,.1);
+    font-size:12px;
+    letter-spacing:2px;
+    margin-bottom:18px;
+}
+
+h1{
+    font-size:clamp(30px,8vw,52px);
+    margin-bottom:12px;
+}
+
+.subtitle{
+    opacity:.75;
+    font-size:16px;
+    margin-bottom:25px;
+}
+
+/* TYPING */
+
+.typing{
+    min-height:80px;
+    max-width:570px;
+    margin:auto;
+    font-size:19px;
+    line-height:1.6;
+}
+
+/* BUTTONS */
+
+button{
+    margin:8px;
+    padding:13px 21px;
+
+    border:none;
+    border-radius:30px;
+
+    background:white;
+    color:#09101e;
+
+    font-weight:bold;
+    font-size:15px;
+
+    cursor:pointer;
+    transition:.25s;
+}
+
+button:hover{
+    transform:translateY(-3px) scale(1.03);
+}
+
+/* MESSAGE */
+
+.message{
+    display:none;
+    margin-top:25px;
+    padding:23px;
+
+    border-radius:22px;
+    background:rgba(255,255,255,.08);
+
+    line-height:1.7;
+    font-size:17px;
+
+    animation:appear .6s ease;
+}
+
+@keyframes appear{
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.equation{
+    margin-top:20px;
+    font-size:24px;
+    opacity:.8;
+}
+
+.footer{
+    margin-top:25px;
+    font-size:12px;
+    opacity:.45;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="stars">
+
+    <div class="star" style="top:10%;left:12%"></div>
+    <div class="star" style="top:18%;left:80%"></div>
+    <div class="star" style="top:35%;left:92%"></div>
+    <div class="star" style="top:65%;left:8%"></div>
+    <div class="star" style="top:80%;left:75%"></div>
+    <div class="star" style="top:55%;left:50%"></div>
+    <div class="star" style="top:90%;left:30%"></div>
+
+</div>
+
+<!-- FLOATING PHYSICS -->
+
+<div class="formula" style="top:10%;left:6%">F = ma</div>
+<div class="formula" style="top:25%;right:7%">v = u + at</div>
+<div class="formula" style="bottom:20%;left:5%">E = mc²</div>
+<div class="formula" style="bottom:10%;right:8%">W = Fs</div>
+<div class="formula" style="top:55%;left:90%">λ = h/p</div>
+
+<div class="container">
+
+<div class="card">
+
+    <div class="badge">
+        PHYSICS • SCIENCE • TEACHERS' DAY
+    </div>
+
+    <div class="atom">
+        <div class="nucleus"></div>
+    </div>
+
+    <h1>
+        Happy Teachers' Day Sir! ⚡
+    </h1>
+
+    <div class="subtitle">
+        Because every great discovery begins with a great teacher.
+    </div>
+
+    <div class="typing" id="typing"></div>
+
+    <div class="equation">
+        F = ma &nbsp; • &nbsp; E = mc² &nbsp; • &nbsp; ❤️ = Gratitude
+    </div>
+
+    <br>
+
+    <button onclick="showMessage()">
+        🔬 Start Experiment
+    </button>
+
+    <button onclick="speakMessage()">
+        🔊 Hear Message
+    </button>
+
+    <div class="message" id="message">
+
+        <b>Dear Sir,</b>
+
+        <br><br>
+
+        Happy Teachers' Day! ⚡📚
+
+        <br><br>
+
+        Thank you for turning complicated concepts,
+        formulas and numericals into something we can
+        actually understand.
+
+        <br><br>
+
+        Physics isn't just about forces, motion and equations —
+        you've taught us to look at the world with curiosity
+        and ask <b>"Why?"</b>
+
+        <br><br>
+
+        Your classes remind us that science isn't only
+        something written in a textbook...
+        it's happening all around us. 🌌
+
+        <br><br>
+
+        Thank you for your patience, guidance,
+        and for encouraging us to think beyond
+        simply memorising formulas.
+
+        <br><br>
+
+        <b>
+        A good teacher explains Physics.
+        A great teacher makes us curious about it. ⚡
+        </b>
+
+        <br><br>
+
+        And Sir...
+
+        <br>
+
+        <b>
+        If my numerical ever goes wrong,
+        at least I know whom to ask! 😂
+        </b>
+
+        <br><br>
+
+        Thank you for being an amazing teacher.
+
+        <br><br>
+
+        ⚡ <b>Physics + Curiosity = Discovery</b>
+
+        <br><br>
+
+        <b>Happy Teachers' Day, Sir! 🌟</b>
+
+    </div>
+
+    <div class="footer">
+        Made with respect, curiosity & a little Physics ⚡
+    </div>
+
+</div>
+
+</div>
+
+<script>
+
+/* TYPING EFFECT */
+
+const text =
+"Some teachers teach formulas. Great teachers teach us how to think. Thank you for making Physics more than just a subject.";
+
+let i=0;
+
+function typeText(){
+
+    if(i < text.length){
+
+        document.getElementById("typing").innerHTML +=
+        text.charAt(i);
+
+        i++;
+
+        setTimeout(typeText,35);
+
+    }
+
+}
+
+typeText();
+
+
+/* SURPRISE */
+
+function showMessage(){
+
+    const message =
+    document.getElementById("message");
+
+    message.style.display="block";
+
+    message.scrollIntoView({
+        behavior:"smooth",
+        block:"center"
+    });
+
+}
+
+
+/* VOICE */
+
+function speakMessage(){
+
+    const speech =
+    "Happy Teachers Day Sir. " +
+    "Thank you for making Physics more than just formulas and numericals. " +
+    "You have taught us to be curious, ask why, and understand the world around us. " +
+    "Thank you for your patience, guidance and support. " +
+    "Happy Teachers Day Sir.";
+
+    const voice =
+    new SpeechSynthesisUtterance(speech);
+
+    voice.rate=.9;
+    voice.pitch=1;
+
+    speechSynthesis.cancel();
+
+    speechSynthesis.speak(voice);
+
+}
+
+</script>
+
+</body>
+</html>
